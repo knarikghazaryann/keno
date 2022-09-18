@@ -26,14 +26,14 @@ function keno() {
             balance.innerText = balance.innerText - bet.value
             for (let i = 0; i < 35; i++) {
                 setTimeout(() => {
-                    randomNum = Math.floor(Math.random(40) * boxes.length);
+                    randomNum = Math.floor(Math.random() * boxes.length);
                     if (boxes[randomNum].style.backgroundColor !== 'grey') {
                         boxes[randomNum].style.backgroundColor = 'grey';
                         count++
                     } else {
                         let isNotFin = true;
                         while (isNotFin) {
-                            let randomNum = Math.floor(Math.random(40) * boxes.length);
+                            let randomNum = Math.floor(Math.random() * boxes.length);
                             if (boxes[randomNum].style.backgroundColor !== 'grey') {
                                 boxes[randomNum].style.backgroundColor = 'grey';
                                 count++
